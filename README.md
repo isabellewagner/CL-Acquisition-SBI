@@ -18,4 +18,8 @@ Manual change to LTV documents/codes are required quarterly (in Feb, May, Aug, &
 
 Manual changes are also required annually (~Jan) when CL Control has a new value for:
   - BIT rep rate per minute. Chandan Pathak/Dan Brahler/Joe Geng have provided this in past years.
+    1. In LTV Code for Paid Search Application, the new rate can overwrite the previous rate.
+    2. In LTV Code for History Table, the new rate should be added and code uncommented in the query making QuoteInfoAdded2.
   - Bundle & Extend. Chandan Pathak/Dan Brahler/Joe Geng have provided this in past years.
+    1. In LTV Code for Paid Search Application, the new value can overwrite the previous value.
+    2. In LTV Code for History Table, the new value should be added and code uncommented in the query making QuoteInfoAdded2.
