@@ -17,5 +17,5 @@ Manual change to LTV documents/codes are required quarterly (in Feb, May, Aug, &
     2. Uncomment the newest PLE file join in the PROC SQL statement creating the table called RecentSales2.
 
 Manual changes are also required annually (~Jan) when CL Control has a new value for:
-  - BIT rep rate per minute. Chandan Pathak/Dan Brahler/Joe Geng have provided this in past year.
-  - Bundle & Extend. Chandan Pathak/Dan Brahler/Joe Geng have provided this in past year.
+  - BIT rep rate per minute. Chandan Pathak/Dan Brahler/Joe Geng have provided this in past years.
+  - Bundle & Extend. Chandan Pathak/Dan Brahler/Joe Geng have provided this in past years.
