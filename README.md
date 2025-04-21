@@ -6,9 +6,9 @@ The LTV Code for History Table imports sales since 2024 and assigns each an LTV.
 
 Manual change to LTV documents/codes are required quarterly (in Feb, May, Aug, & Nov). This includes:
   - A new PLE file for the quarter.
-    1. Create a copy of the most recent PLE file (PLE YYYYMM) located here: \\prog1\east\wrkgrp\nfs\sas_prod\CNTL\SBI\Projects\LTV\
+    1. Create a copy of the most recent PLE file (PLE YYYYMM) located here: \\\prog1\east\wrkgrp\nfs\sas_prod\CNTL\SBI\Projects\LTV\
     2. Rename it with the current month's name.
-    3. Open this month's SBI Retention file located here: \\prog1\east\wrkgrp\SHARED\Retention\SBI Retention\
+    3. Open this month's SBI Retention file located here: \\\prog1\east\wrkgrp\SHARED\Retention\SBI Retention\
     4. In the new PLE file, substitute in the values from the SBI Retention report for each segment's PLE.
   - In LTV Code for Paid Search Application:
     1. Rename the PLE file being imported in the 3 PROC IMPORTs to the newest version of the file.
