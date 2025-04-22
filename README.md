@@ -1,4 +1,5 @@
-This code creates a summarized table of the Partner SBI Holistic Funnel metrics. The output is used in the SBI Funnel and Daily PIF dashboard.
+This code creates a summarized table of the Partner SBI Holistic Funnel metrics. The output is used in the SBI Funnel and Daily PIF Tableau dashboard.
+  Link to the dashboard: https://tableauserver/#/site/CommercialLines/views/PartnerSBIFunnel-HolisticDraft/PartnerSBIHolisticFunnel?:iid=1
   The table is written to BISSCLAcqSBI.dbo.SBI_Funnel_Holistic
 
 The code is saved here:
