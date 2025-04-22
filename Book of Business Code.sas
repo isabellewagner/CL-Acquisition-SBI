@@ -1,7 +1,6 @@
 /********************************/
 /*** Today's Book of Business ***/
 /********************************/
-/* Current date & time */
 %let StartTime = %sysfunc(datetime(), datetime20.);
 
 /* PIFs - replaced Holistic Funnel BISS source with SF source - IW 20250414*/
