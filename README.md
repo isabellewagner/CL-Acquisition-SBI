@@ -1,3 +1,5 @@
+Link to the report: https://tableauserver/#/site/CommercialLines/views/PartnerDNQInsights/DNQDecomp?:iid=3
+
 These codes are saved here:
   \\\prog1\east\wrkgrp\nfs\sas_prod\CNTL\SBI\RTB\Carrier DNQ Report\
 
