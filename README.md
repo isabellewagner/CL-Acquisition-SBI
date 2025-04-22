@@ -4,10 +4,10 @@ The code is saved here:
 It is scheduled to run daily at 9am.
 
 The data sources for this job includes:
-  BQX tables in Snowflake (CL_SBI.PUBLISHED).
-  BDE tables in SQL (mss-p1-bde-01,57842).
-  BIT tables in SQL SmallBusinessInsurance (mss-p1-pca-06).
-  DSE tables.
-  CLAcq table in SQL (BISSCLAcqSBI.dbo.EvanstonRolloutPhases).
+  - BQX tables in Snowflake (CL_SBI.PUBLISHED).
+  - BDE tables in SQL (mss-p1-bde-01,57842).
+  - BIT tables in SQL SmallBusinessInsurance (mss-p1-pca-06).
+  - DSE tables.
+  - CLAcq table in SQL (BISSCLAcqSBI.dbo.EvanstonRolloutPhases).
   
 The job exports tables to the BISSCLAcqSBI SQL Server.
