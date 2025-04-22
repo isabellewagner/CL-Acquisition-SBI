@@ -1,4 +1,4 @@
-Lifetime Value (LTV) model code is run at 8am daily as a scheduled job in SAS.
+Lifetime Value (LTV) model code is run at 8am daily as a scheduled job in SAS. Both codes are saved here: \\\prog1\east\wrkgrp\nfs\sas_prod\CNTL\SBI\Projects\LTV\
 
 The LTV Code for Paid Search Application imports the last 90 days of sales and assigns each an LTV. These values are used in paid search marketing. The data set is written out to BISSCLAcqSBI.dbo.Sale_LTV_T3 in the mss-p1-biss-01 SQL server.
 
