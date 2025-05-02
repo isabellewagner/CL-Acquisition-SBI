@@ -119,10 +119,13 @@ create table Auto_Data as select * from connection to odbc
     p.FRST_INSD_LAST_NAM,
     p.SCND_INSD_FRST_NAM,
     p.SCND_INSD_LAST_NAM,
-	case when upper(cqw.email_adrs) <> 'NONE' or cqw.email_adrs <>'' then cqw.email_adrs
-		when p.ESIGN_EMAIL_ADRS <>'' then p.ESIGN_EMAIL_ADRS 
-		else '' end
-		as Email_address,
+	case when upper(cqw.email_adrs) <> 'NONE'
+			and upper(cqw.email_adrs) not like 'NONE@'
+			and cqw.email_adrs <> '' then cqw.email_adrs
+		when upper(p.ESIGN_EMAIL_ADRS) <> 'NONE'
+			and upper(p.ESIGN_EMAIL_ADRS) not like 'NONE@'
+			and p.ESIGN_EMAIL_ADRS <> '' then p.ESIGN_EMAIL_ADRS 
+		else '' end as Email_address,
 	p.ESIGN_EMAIL_ADRS ,
 	CQW.EMAIL_ADRS,
     p.DBA_NAM,
@@ -138,7 +141,7 @@ create table Auto_Data as select * from connection to odbc
     bt.BMT,
 	R.DSTRBT_CHNL
 from CAW.POLICY p 
-	inner join CAW.POL_DATES pd
+	left join CAW.POL_DATES pd
 		on pd.POL_ID_CHAR = p.POL_ID_CHAR
     	and pd.RENW_SFX_NBR = p.RENW_SFX_NBR
     	and pd.POL_EXPR_YR = p.POL_EXPR_YR
@@ -159,7 +162,10 @@ from CAW.POLICY p
 		on p.cv_qt_key = cqw.cv_qt_key
 	left join CAW.RT_MAN_MDL R
 		on R.RT_MAN_CD= P.RT_MAN_CD
-where pd.pol_in_frc='Y');
+where pd.pol_in_frc='Y'
+	and p.pol_mock_ind = 'N'
+	and r.risk_typ_cd <> 'TN'
+	and r.dstrbt_chnl in ('A','D'));
 quit;
 
 /*standardize fields for customer matching */
