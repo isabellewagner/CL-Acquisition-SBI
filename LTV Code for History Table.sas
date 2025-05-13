@@ -6,7 +6,7 @@
 /*** Uncomment lines at the import section (row 23) and the PLE join (row 157) when a new quarterly PLE file is available. ***/
 
 /*Current date & time*/
-%let StartTime = %sysfunc(datetime(), datetime20.);
+/*%let StartTime = %sysfunc(datetime(), datetime20.);*/
 
 /*** BIT rep rate per minute from Chandan ***/
 %let RatePerMin2024 = 2.3;
@@ -416,7 +416,7 @@ DATA CLAcq.Sale_LTV_Since2024; SET Final2; RUN;
 /*********************************************/
 
 /*Time when code finished, and time it took to run*/
-%let FinishTime = %sysfunc(datetime(), datetime20.);
+/*%let FinishTime = %sysfunc(datetime(), datetime20.);
 %let FinishTimet = %sysfunc(time(), hhmm.);
 %let FinishTimedt = %sysfunc(inputn(&FinishTime., datetime20.));
 %let StartTimedt = %sysfunc(inputn(&StartTime., datetime20.));
@@ -430,4 +430,4 @@ file sendit email
 put "The LTV Code for Direct Mail Application finished at &FinishTimet. and took &RunTime. minutes to complete.";
 put;
 put "The code started at &StartTime. and finished at &FinishTime..";
-RUN;
+RUN;*/
