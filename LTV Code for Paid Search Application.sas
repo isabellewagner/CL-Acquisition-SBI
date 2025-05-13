@@ -4,7 +4,7 @@
 /********************************************************************/
 
 /*Current date & time*/
-%let StartTime = %sysfunc(datetime(), datetime20.);
+/*%let StartTime = %sysfunc(datetime(), datetime20.);*/
 
 /*** BIT rep rate per minute from Chandan for 2025 ***/
 %let RatePerMin = 2.5; /*$2.30 in 2024*/
@@ -262,7 +262,7 @@ DATA CLAcq.Sale_LTV_T3; SET Final2; RUN;
 /*********************************************/
 
 /*Time when code finished, and time it took to run*/
-%let FinishTime = %sysfunc(datetime(), datetime20.);
+/*%let FinishTime = %sysfunc(datetime(), datetime20.);
 %let FinishTimet = %sysfunc(time(), hhmm.);
 %let FinishTimedt = %sysfunc(inputn(&FinishTime., datetime20.));
 %let StartTimedt = %sysfunc(inputn(&StartTime., datetime20.));
@@ -276,4 +276,4 @@ file sendit email
 put "The LTV Code for Paid Search Application finished at &FinishTimet. and took &RunTime. minutes to complete.";
 put;
 put "The code started at &StartTime. and finished at &FinishTime..";
-RUN;
+RUN;*/
