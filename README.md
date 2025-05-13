@@ -1,5 +1,5 @@
-# Partner-SBI
+# CL Acquisition & SBI
 
-Welcome to the Partner SBI GitHub repository!
+Welcome to the CL Acquisition & SBI GitHub repository!
 
-Here, you'll find the code and overview of reporting on Partner SBI data.
+Here, you'll find the code and overview of existing scheduled jobs.
